@@ -1,0 +1,71 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+.DataViz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 70px;
+  width: 100vw;
+  /* margin-top: 100px; */
+  background: #ECFFDC;
+  height: 100vh;
+  overflow-y: none;
+}
+.chart {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 60px;
+  
+}
+.pie {
+  width: 300px;
+ 
+}
+.bar {
+  width: 700px;
+}
+.extra {
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  display: flex;
+  gap: 100px;
+}
+.count,
+.min,
+.max {
+  margin-bottom: 70px;
+  background: rgb(238, 153, 110);
+  width: 300px;
+  height: 120px;
+  padding-top: 0px;
+  
+  text-align: center;
+  font-weight: 900;
+  
+  border-radius: 5px;
+  line-height: 25px;
+}
+h3{
+  color: white;
+}
+.min {
+  background: red;
+  
+}
+.max {
+  background: green;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background: gainsboro;
+  width: 100vw;
+}

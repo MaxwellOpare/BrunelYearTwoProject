@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: white;
+}
+
+.GradientCircle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.skill {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+  }
+
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7)
+}
+
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 0px -10px rgba(0,0,0,0.05);
+}
+#number{
+    font-weight: 600;
+    color: white;
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;/*complete circle*/
+    stroke-dashoffset: 472;
+    animation: animate 2s linear forwards;
+}
+svg{
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+@keyframes animate{
+    100%{
+        stroke-dashoffset: 94.4;/*calculation (472 - 472 x(amount u want to be the percent(e.g.0.80)))*/
+    }
+}
+.WhatEnergyScore{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.WhatEnergyScore h1{
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+.WhatEnergyScore h1 span{
+    color: #e74d06;
+}
+
+.EnergyUsage_section{
+    width: 100%;
+    height: 70vh;
+    padding: 0px 13%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.EnergyUsage_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.EnergyUsage_head h2{
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+.EnergyUsage_head h2 span{
+    color: #e74d06;
+}
+.EnergyUsage_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.EnergyUsage_main .EnergyUsage_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+.EnergyUsage_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.EnergyUsage_bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.EnergyUsage_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #e74d06;
+    border-radius: 25px;
+}
+.EnergyUsage_bar .bar .Electricity{
+    width: 90%;
+    animation: Electricity 3.5s;
+}
+@keyframes Electricity {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.EnergyUsage_bar .bar .C02-Emissions{
+    width: 85%;
+    animation: C02-Emissions 3.5s;
+}
+@keyframes C02-Emissions {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.EnergyUsage_bar .bar .Carbon-Footprint{
+    width: 80%;
+    animation: Carbon-Footprint 3.5s;
+}
+@keyframes Carbon-Footprint {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.EnergyUsage_bar .bar .Renewable{
+    width: 80%;
+    animation: Renewable 3.5s;
+}
+@keyframes Renewable {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.EnergyUsage_bar .bar .Natural-Gas{
+    width: 75%;
+    animation: Natural-Gas 3.5s;
+}
+@keyframes Natural-Gas {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.EnergyUsage_bar .bar .Coal{
+    width: 70%;
+    animation: Coal 3.5s;
+}
+@keyframes Coal {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.EnergyUsage_bar .bar .Oil{
+    width: 65%;
+    animation: Oil 3.5s;
+}
+@keyframes Oil {
+    0%{
+        width: 0%;
+    }100%{
+        width: 65%;
+    }
+}
+.EnergyUsage_bar .bar .Cost{
+    width: 60%;
+    animation: Cost 3.5s;
+}
+@keyframes Cost {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+
+.SaveEnergyScore{
+    display: flex;
+    margin: auto;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 220px;
+    height: 59px;
+    color: white;
+    background: orangered;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.SaveEnergyScore a:hover{
+    background-color: #30a1fd;
+}
+
+.ImproveEnergyScore{
+    width: 100%;
+    height: 30vh;
+    padding: 0px 13%;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.ImproveEnergyScore h3{
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+.ImproveEnergyScore h3 span{
+    color: #0660e7;
+}

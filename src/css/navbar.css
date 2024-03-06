@@ -1,0 +1,151 @@
+.nav-bar {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    position: fixed;
+    width: 225px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding: 5px;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.logo-holder {
+    width: 99%;
+    height: 15%;
+    position: relative;
+    display: flex;
+}
+
+.navbar-title {
+    text-align: right;
+    font-weight: bolder;
+    font-size: 28px;
+    color: rgb(43, 54, 116);
+    margin-top: 10px;
+}
+
+.logo {
+    background-image: url("../assets/images/bulb.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    float: left;
+    border-style: none;
+}
+
+#login, #register {
+    background-color: rgb(67, 24, 255);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 7px;
+    width: 80%;
+    height: 35px;
+    border-radius: 8px;
+    position: relative;
+    left: 7%;
+    transition: opacity .2s;
+}
+
+#login {
+    top: 0px;
+}
+
+#register {
+    top: 10%;
+    bottom: 0;
+}
+
+#register:hover, #login:hover {
+    opacity: .8;
+}
+
+.buttons-holder {
+    position: absolute;
+    top: 100px;
+    margin-left: 2.5%;
+}
+
+.nav-bottom {
+    text-align: center;
+    position: relative;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    left: 50%;
+    top: 78%;
+    bottom: 0px;
+}
+
+.nb-div {
+    margin-left: 20px;
+}
+
+#nb {
+    color: rgb(163, 174, 208);
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 15%;
+    font-weight: lighter;
+}
+
+.home-icon {
+    background-image: url("../assets/images/home.png");
+}
+
+.report-icon {
+    background-image: url("../assets/images/report.png");
+}
+
+.energy-icon {
+    background-image: url("../assets/images/energy.png");
+}
+.premium-icon {
+    background-image: url("../assets/images/premium.jpeg");
+}
+.viz-icon {
+    background-image: url("../assets/images/viz.svg");
+}
+.calc-icon {
+    background-image: url("../assets/images/calc.png");
+}
+.admin-icon {
+    background-image: url("../assets/images/admin.jpeg");
+}
+.signup-icon {
+    background-image: url("../assets/images/sign-up.png");
+}
+.signin-icon {
+    background-image: url("../assets/images/sign-in.jpeg");
+}
+
+
+#ic {
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: absolute;
+    margin-right: 5px;
+    font-size: 0;
+    height: 18px;
+    width: 18px;
+}
+
+#ic::after {
+    border: 0;
+}
+
+.nav-button {
+    color: white;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    margin-right: 30px;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+}

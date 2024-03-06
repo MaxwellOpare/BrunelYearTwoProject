@@ -1,0 +1,252 @@
+.report-holder {
+    display: inline-block;
+    height: auto;
+    background-color: white;
+    /*border: 1px solid grey;*/
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .075);
+    /*margin-bottom: 10px;*/
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: calc(25% - 20px); /* 20px accounts for the padding */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.report-title {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#selected {
+    opacity: 1;
+}
+
+#unselected {
+    opacity: .5;
+}
+
+.activity-holder {
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /*background-color: white;*/
+}
+
+.data-holder {
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
+.stats {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .075);
+    background-color: white;
+    width: 61%;
+    height: 600px;
+    margin-left: 50px;
+}
+
+.reports-list {
+    width: auto;
+    display: inline-block;
+}
+
+.report-title, .title-bar, .section, .option-holder {
+    width: auto;
+}
+
+.option-holder {
+    margin-top: 25px;
+}
+
+.section {
+    margin-right: 50px;
+}
+
+.section, .section-preview {
+    width: 100%;
+    display: flex;
+}
+
+.section-preview {
+    position:relative;
+    text-align: center;
+}
+
+.value {
+    padding: 15px;
+    font-size: 15px;
+}
+
+.subtitle {
+    margin-left: 17%;
+    padding: 15px;
+}
+
+.date-created {
+    float: right;
+    position: fixed;
+    margin-right: 25px;
+}
+
+.data-holder {
+    float: left;
+}
+
+#false {
+    display: none;
+}
+
+.info-text {
+    text-align: center;
+    margin-top: 15%;
+    color: rgb(43, 54, 116);
+    font-size: 25px;
+}
+
+.pages button {
+    background-color: rgb(60, 150, 255);
+    font-weight: bolder;
+    font-size: medium;
+    border-radius: 7px;
+    color: white;
+    border: none;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    transition: opacity .2s;
+    margin-right: 10px;
+}
+
+.pages button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.pages {
+    padding: 5px;
+    width: 97%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .075);
+}
+
+.archive, .delete {
+    margin-top: 25px;
+    padding: 10px;
+    width: 40%;
+    margin-left: 10px;
+    border-radius:8px;
+    opacity: 1;
+    border: none;
+    background-color: rgb(67, 24, 255);
+    color: white;
+    font-weight: bold;
+    transition: opacity .2s;
+}
+
+.send-to-email {
+    background-color:  rgb(66, 116, 255);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 7px;
+    width: 270px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 9px;
+    transition: opacity .2s;
+}
+
+.open {
+    padding: 8px;
+    width: 95%;/*width: 30%;*/
+    border: none;
+    margin-right: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 7px;
+    transition: opacity .2s;
+    font-size: medium;
+}
+
+.prediction-graph {
+    width: 100%;
+}
+
+.archive:hover, .delete:hover, .open:hover, .back-button:hover, .send-to-email:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+.back-button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius:8px;
+    opacity: 1;
+    border: none;
+    background-color: rgb(67, 24, 255);
+    color: white;
+    font-weight: bold;
+    transition: opacity .2s;
+}
+
+.opened-frame {
+    display: flex;
+}
+
+.opened-report-box {
+    display: flex;
+    padding: 10px;
+    width: 97%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .075);
+    margin-bottom: 30px;
+}
+
+#content-visible-false {
+    display: none;
+}
+
+#content-visible-true {
+    display: block;
+}
+
+.open {
+    background-color: rgb(50, 200, 100);
+    color: rgb(255, 255, 255);
+}
+
+.archive {
+    background-color: rgb(255, 170, 50);
+    color: rgb(255, 255, 255);
+}
+
+.delete {
+    background-color: rgb(255, 75, 75);
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+    .report-holder {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .report-holder {
+        width: 100%;
+    }
+}
